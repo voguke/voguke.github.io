@@ -6,12 +6,12 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="voguke.com">
-  <title>voguke</title>
+  <title>Archives: 2017/9 | voguke</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="问渠那得清如水，为有源头活水来。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="voguke">
-<meta property="og:url" content="voguke.com/index.html">
+<meta property="og:url" content="voguke.com/archives/2017/09/index.html">
 <meta property="og:site_name" content="voguke">
 <meta property="og:description" content="问渠那得清如水，为有源头活水来。">
 <meta name="twitter:card" content="summary">
@@ -154,158 +154,41 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-送给小白的搭梯子图文教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#送给小白的搭梯子图文教程#</p>
-<p>因为某些特殊原因，很多国外网站我们在国内无法访问，但是又有急需的材料需要从外网获得。这篇文章就是送给非计算机专业的朋友们的傻瓜式搭梯子教程,当然搭梯子是有很多方法的，我这里介绍的是我自己当时使用的，比较简单。</p>
-<p>ps:这是windows系统下的教程</p>
-<p>1.首先你需要一台国外的服务器（也就是vps），国外服务器商有名的有<a href="https://www.vultr.com/" target="_blank" rel="external">Vultr</a>,<a href="http://www.sugarhosts.com/" target="_blank" rel="external">SugarHosts</a>,<a href="http://www.linode.com/" target="_blank" rel="external">Linode</a>以及<a href="https://bwh1.net/index.php" target="_blank" rel="external">BandwagonHost(搬瓦工)</a>等等，具体各服务器商家的优劣可以参考<a href="http://www.laozuo.org/myvps" target="_blank" rel="external">这篇文章</a>，注意有些商家比如Vultr和搬瓦工是支持支付宝的，对国内用户比较友好。</p>
-<p>2.参考完服务商后就是决定你要买哪一款vps了，这里我用的是搬瓦工的<a href="https://bwh1.net/cart.php?a=confproduct&amp;i=2" target="_blank" rel="external">一款产品</a>,年付$19.99，合成人民币一月十几元，比较划算，同时可以使用优惠券（网上一搜一大把），当然首先你要注册搬瓦工的账号。</p>
-<p>产品参数页面如图</p>
-<p><img src="https://cl.ly/2o1M313p2T18" alt="产品参数"></p>
-<p>然后选择要买多长时间的，接着是点击要支付的按钮（都在上图中操作）</p>
-<p>进入购物车页面，在下方“Promotional Code”中可填入你从网上获得的优惠码，可以打折。</p>
-<p><img src="https://cl.ly/1M201E050L0p" alt="购物车页面"></p>
-<p>点击“checkout”进入支付页面，这一步就是填各种信息，大家自己填就可以了。</p>
-<p><img src="https://cl.ly/3O2m3c0N2616" alt="支付页面"></p>
-<p>最后在这个页面最下方选择支付方式（有三种，其中Alipay是支付宝），可以根据自己情况选择，我这里用的是支付宝扫码支付，ok，支付完成（这里就不放图了）。</p>
-<p>3.好了现在你已经拥有一台属于自己的vps虚拟主机了，下面的事情就非常简单。</p>
-<p>首先再次进入搬瓦工的页面，登录你的账号，选择这里面的services，点击“My Services”进入你的产品列表，如图：</p>
-<p><img src="https://cl.ly/1T0L2R2J0D2u" alt="services"></p>
-<p><img src="https://cl.ly/0g20332A162B" alt="my services"></p>
-<p><img src="https://cl.ly/120Q0c2A0z0i" alt="my product"></p>
-<p>点击“Manage”，进入下面的页面：</p>
-<p><img src="https://cl.ly/1c3e1K2G3C2Z" alt="login"></p>
-<p>点击“Login to KiwiVM control Panel”进入远在千里之外的你的主机的系统！有没有感到些激动？（具体的根据你买的产品，可能图不太一样）</p>
-<p>进入后是这个样子的：</p>
-<p><img src="https://cl.ly/2P0G102M0l2H" alt="linux system"></p>
-<p>这个就是你vps主机的操作界面，你可以在这里更改设置，配置自己的主机环境。</p>
-<p>在下方的选项中找到“KiwiVM Extras”如图：</p>
-<p><img src="https://cl.ly/2c2T2X2P1u0D" alt="KiwiVM Extras"></p>
-<p>看到里面的红框中标出的三个“server”了吗，这是搬瓦工为用户提供的代理服务器，就是通过它们我们可以方便的翻墙。这里我装的是ShadowSocks Server，点击后如图：</p>
-<p><img src="https://cl.ly/2f2F291H1Z3z" alt="ss server"></p>
-<p>这个界面提供ShadowSocks的客户端下载，大家根据自己的环境下载一个安装就可以。往下翻有一个这样的图，这是用于客户端配置的，大家先截下来。</p>
-<p><img src="https://cl.ly/0I2F2x3j202l" alt="配置图"></p>
-<p>4.现在打开你已经安装好的ShadowSocks客户端，出现界面如图：</p>
-<p><img src="https://cl.ly/332u0Q1o3n0P" alt="ss"></p>
-<p>是不是很熟悉！拿出你之前的截图！按照上面的一项一项的配置后确认，就OK了。</p>
-<p>这个时候你已经可以访问外国网站了，现在进行一些小配置，在桌面下方找到shadowsocks的运行图标，一个小飞机，选择“启用系统代理”和“开机运行”，到此已经一切ok。</p>
-<p>5.你可以开心的上网了。</p>
-<p>最后，搭建梯子的方式有很多，我只是讲了我会的那种，最近商业vpn被封死了一大片，很多人像我一样一开始什么都不会，所以我写这篇文章希望能帮大家一些忙。如果各位有什么问题可以加我QQ：2154197468询问，虽然我会的也不多，但我会努力帮大家解决一下问题的。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/20/送给小白的搭梯子图文教程/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-近期总结梳理及短期未来计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/19/近期总结梳理及短期未来计划/">近期总结梳理及短期未来计划</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/19/近期总结梳理及短期未来计划/" class="archive-article-date">
-  	<time datetime="2017-05-19T14:48:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-19</time>
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/09/20/送给小白的搭梯子图文教程/" class="archive-article-date">
+  	<time datetime="2017-09-20T06:07:07.735Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>学业方面：<br>1.正在学习java ee，基础理论基本完成，需项目实践和部分知识点补齐。<br>2.《微机原理》及《操作系统》，同CSPP和OP一同学习。已完结虚拟存储部分，计划写一篇<br>关于该部分的总结博文。计划学习机器指令及链接部分，并在学习后写相关博文总结。<br>3.14周的java考试，准备开始复习。（从下周起重要等级提为一级）。<br>4.SICP学习延后。</p>
-<p>绘画方面：<br>1.人体动态基本结束，部分角度需要加强练习。<br>2.开始人体肌肉的练习，计划一周内基本完成。<br>3.下一步是头部角度及面部表情的练习。</p>
+        </div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/19/近期总结梳理及短期未来计划/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
   
-    <article id="post-my-first-article" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: my first article<br>date: 2017-05-15 11:40:34<br>自己的博客！建成了！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/15/my-first-article/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-  
 
 
           </div>
@@ -327,9 +210,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
